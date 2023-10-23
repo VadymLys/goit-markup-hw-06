@@ -1194,7 +1194,7 @@ fill:#F4F4FD;
    .benefits-text {
        color: #2E2F42;
        font-size: 36px;
-       font-weight: 700;
+       font-weight: 500;
        line-height: 1.11;
        letter-spacing: 0.02em;
        margin-bottom: 8px;
@@ -1293,6 +1293,12 @@ fill:#F4F4FD;
      margin: 0 auto;
  }
        
+.benefits-desc {
+    color: var(--SLATE, #434455);
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
 
           .benefits-wrapper {
               display: flex;
@@ -1304,14 +1310,7 @@ fill:#F4F4FD;
      width: calc((100% - 72px) / 4);
    }
 
-   .benefits-text {
-       color: #2E2F42;
-       font-size: 20px;
-       font-weight: 400; 
-       line-height: 1.20;
-       letter-spacing: 0.02em;
-        margin-bottom: 8px;
-    }
+
      
    .our-team-item {
       background-color: #FFFFFF;
