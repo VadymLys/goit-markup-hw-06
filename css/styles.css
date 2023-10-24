@@ -547,8 +547,9 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.02em;
     text-transform: uppercase;
     /* margin-right:76px; */
-    display: inline-block;
+    display: block;
     margin-bottom: 16px; 
+    text-align: center;
     
 
   }
@@ -670,8 +671,8 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     /* line-height: 1.20; */
     letter-spacing: 0.02em;
     margin-bottom: 8px; 
-    /* text-align: center;
-    */
+   
+    
     
 }
 .benefits-desc {
@@ -682,7 +683,7 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
   
 .section-app{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 
 .desc{
@@ -1062,6 +1063,15 @@ fill:#F4F4FD;
         display:none;
     }
 
+          .benefits-text {
+              color: #2E2F42;
+              font-size: 36px;
+              font-weight: 700;
+              line-height: 1.11;
+              letter-spacing: 0.02em;
+              margin-bottom: 8px;
+            text-align: center;}
+
          .benefits-desc {
              color: var(--SLATE, #434455);
              font-weight: 500;
@@ -1132,7 +1142,7 @@ fill:#F4F4FD;
         }
     
         .solutions {
-            padding: 188px 0;
+            padding: 112px 0;
             color: #ffffff;
             max-width: 1440px; 
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-tablet.jpg');
@@ -1168,22 +1178,20 @@ fill:#F4F4FD;
         
                 }
 
-                .team{
-                    width:552px;
-                    gap: 64px 24px;
-                    
-                }                
+
+
 
                 .our-team-list 
                 {
                 display: flex;
                 gap: 64px 24px;
                 flex-wrap: wrap;
+                justify-content: center;
             }
 
             .our-team-item {
             background-color: #FFFFFF;
-              width: calc((100% - 24px) / 2);
+            width: 264px;
             border-radius: 0px 0px 4px 4px;
              box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
             }
@@ -1191,7 +1199,7 @@ fill:#F4F4FD;
    .benefits-text {
        color: #2E2F42;
        font-size: 36px;
-       font-weight: 500;
+       font-weight: 700;
        line-height: 1.11;
        letter-spacing: 0.02em;
        margin-bottom: 8px;
@@ -1252,11 +1260,25 @@ fill:#F4F4FD;
                             margin-left: auto;
                         }
 
+
+
                                                 .contact {
                                                     display: block;
                                                     
+                                                    
                                                 }
                                 
+                                                                                 .contact-links {
+                                                                                     color: #434455;
+                                                                                     font-size: 12px;
+                                                                                     font-style: normal;
+                                                                                     font-weight: 400;
+                                                                                     line-height: 1.17;
+                                                                                     letter-spacing: 0.02em;
+                                                                                     margin-top: 24px;
+                                                                                     margin-bottom: 24px;
+                                                                                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                                                                                 }
                
             }
         
@@ -1282,7 +1304,7 @@ fill:#F4F4FD;
      padding: 188px 0;
      color: #ffffff;
      max-width: 1440px;
-     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-tablet.jpg');
+     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/Dark-bg-desktop.jpg');
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
