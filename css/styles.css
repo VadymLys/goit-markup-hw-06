@@ -174,7 +174,7 @@ background-color: transparent;
 .menu-close-btn {
    display: block;
    margin-left:auto;
-
+   margin-bottom:24px;
 }
 
 
@@ -191,17 +191,23 @@ background-color: transparent;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    text-transform: capitalize; 
+ 
 }
 
 .current-mob {
     color: #404BBF;
 }
 
+.mob-contact-wrapper{
+    margin-top:auto;
+}
+
 .mob-contact {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-bottom: 42px;
 }
 
 .mob-contact-links-tel{
@@ -666,9 +672,6 @@ transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-size:36px;
     font-weight:700;
     line-height:1.11;
-    /* font-size: 20px; */
-    /* font-weight: 500; */
-    /* line-height: 1.20; */
     letter-spacing: 0.02em;
     margin-bottom: 8px; 
    
@@ -1107,15 +1110,15 @@ fill:#F4F4FD;
                 
         }
 
-                 .subscribe-text {
-                     margin-bottom: 16px;
-                     font-weight: 500;
-                     font-size: 16px;
-                      line-height: 1.5;
-                     letter-spacing: 0.02em;
-                     color: #ffffff;
-                     text-align: center;
-                 }
+     .subscribe-text {
+         margin-bottom: 16px;
+          font-weight: 500;
+         font-size: 16px;
+          line-height: 1.5;
+         letter-spacing: 0.02em;
+         color: #ffffff;
+         text-align: center;
+     }
 }
 
 @media screen and (min-width:768px) {
@@ -1262,23 +1265,23 @@ fill:#F4F4FD;
 
 
 
-                                                .contact {
-                                                    display: block;
-                                                    
-                                                    
-                                                }
+        .contact {
+            display: block;
+            
+            
+        }
                                 
-                                                                                 .contact-links {
-                                                                                     color: #434455;
-                                                                                     font-size: 12px;
-                                                                                     font-style: normal;
-                                                                                     font-weight: 400;
-                                                                                     line-height: 1.17;
-                                                                                     letter-spacing: 0.02em;
-                                                                                     margin-top: 24px;
-                                                                                     margin-bottom: 24px;
-                                                                                     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-                                                                                 }
+      .contact-links {
+          color: #434455;
+          font-size: 12px;
+          font-style: normal;
+              font-weight: 400;
+          line-height: 1.17;
+          letter-spacing: 0.02em;
+          margin-top: 24px;
+              margin-bottom: 24px;
+          transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
                
             }
         
