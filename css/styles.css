@@ -174,7 +174,8 @@ background-color: transparent;
 .menu-close-btn {
    display: block;
    margin-left:auto;
-   margin-bottom:24px;
+   margin-bottom: 24px;
+   background-color:#FFFFFF;
 }
 
 
@@ -199,15 +200,16 @@ background-color: transparent;
     color: #404BBF;
 }
 
-.mob-contact-wrapper{
+.address{
     margin-top:auto;
+    margin-bottom: 48px;
 }
 
 .mob-contact {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 42px;
+    
 }
 
 .mob-contact-links-tel{
@@ -224,6 +226,7 @@ letter-spacing: 0.02em;
         font-weight: 500;
         line-height: 1.20;
         letter-spacing: 0.02em;
+        font-style: normal;
 }
 
 .mob-icons-list {
