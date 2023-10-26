@@ -123,13 +123,6 @@ align-items: center;
 background-color: transparent;
 }
 
-.menu-close-btn{
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .current{
     color: #404bbf;
@@ -151,7 +144,8 @@ background-color: transparent;
 
 
 
-.mob-icon {}
+
+
 
 .mob-menu {
     position:fixed;
@@ -172,10 +166,16 @@ background-color: transparent;
 }
 
 .menu-close-btn {
-   display: block;
-   margin-left:auto;
+   display: flex;
+   justify-content: center;
+   align-items:center;
+   height:24px;
+   width:24px;
+   margin-left:auto; 
    margin-bottom: 24px;
    background-color:#FFFFFF;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 50%;
 }
 
 
@@ -205,6 +205,7 @@ background-color: transparent;
     margin-bottom: 48px;
 }
 
+
 .mob-contact {
     display: flex;
     flex-direction: column;
@@ -218,6 +219,7 @@ font-size: 20px;
 font-weight: 500;
 line-height: 1.20;
 letter-spacing: 0.02em;
+font-style: normal;
 }
 
 .mob-contact-links-email{
