@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,13 +40,13 @@
             </ul>
         </address>
         
-        <button class="mob-menu-btn"><svg class="mob-icon" width="20" height="20"><use href="./images/icons.svg#icon-Group"></use></svg></button>
+        <button class="mob-menu-btn" id="open-mob-btn"><svg class="mob-icon" width="20" height="20"><use href="./images/icons.svg#icon-Group"></use></svg></button>
     
    
-    <div class="mob-menu is-open">
+    <div class="mob-menu" id="open-modal-mob">
 
       <div>
-        <button type="button" class="menu-close-btn"><svg width="8" height="8" class="mob-close-icon">
+        <button type="button" class="menu-close-btn" id="close-menu-btn"><svg width="8" height="8" class="mob-close-icon" id="close-mob-menu">
         <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
       </svg>
       </button>
@@ -109,7 +111,7 @@
     <section class="solutions">
         <div class="container">
            <h1 class="solutions-text">Effective  Solutions for Your Business</h1>
-           <button type="button" class="service-button">Order Service</button>
+           <button type="button" class="service-button" id="open-modal-btn">Order Service</button>
         </div>
     </section> 
      
@@ -627,11 +629,11 @@
 
               </div>
          </footer> 
-         <div class="backdrop">
+         <div class="backdrop" id="window-open">
         <div class="modal">
         
-        <button type="button" class="modal-btn">
-        <svg  width="8" height="8" class="modal-icon-close"><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
+        <button type="button" class="modal-btn" id="close-modal-btn">
+        <svg  width="8" height="8" class="modal-icon-close" ><use href="./images/icons.svg#icon-close-black-18dp-2-1"></use></svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
        
@@ -680,7 +682,7 @@
     
 </div>
   
-  
+<script src="modal.js"></script>
 </body>
 </html>
 
