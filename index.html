@@ -4,6 +4,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
@@ -11,54 +13,72 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/658f0e3226.js" crossorigin="anonymous"></script>
 </head>
 
   <body>
     
       <header class="header"> 
     <div class="container-header container">
-    <a href="./index.html" class="logo">Web<span class="logo-text">Studio</span></a>
-    
+  <!------- Logo --------->
+    <a href="./index.html" class="logo">Web
+      <span class="logo-text">Studio</span>
+    </a>
+
+    <!------- Navigation --------->
     <nav class="navigation">
        
-    
-        
-
-           
-            <ul class="nav">
-                <li><a href="./index.html" class="nav-links current">Studio</a></li>
-                <li><a href="" class="nav-links">Portfolio</a></li>
-                <li><a href="" class="nav-links">Contacts</a></li>
+    <ul class="nav">
+              <li class="nav-items"><a href="./index.html" class="nav-links active">Studio</a></li>
+                <li class="nav-items"><a href="./index.html" class="nav-links">Portfolio</a></li>
+                <li class="nav-items"><a href="./index.html" class="nav-links">Contacts</a></li>
             </ul>
             
-        </nav>
+   </nav>
+          
+
+        <!------- dark-light-checkbox --------->
+        <div class="dark-light-checkbox">
+          <input type="checkbox" id="dark-light" value="true" name="dark-light" class="dark-toggle">
+           <label for="dark-light" class="user-toggle"> 
+           <span class="ball"><i class="fas fa-sun"></i></span> 
+          </label>
+        </div>
       
+
+      <!------- contact-info --------->
       <address class="contact-info">
             <ul class="contact">
             <li><a href="mailto:info@devstudio.com" class="contact-links">info@devstudio.com</a></li>
             <li><a href="tel:+110001111111" class="contact-links">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-        
+       
+
+        <!------- start of mob-menu button --------->
         <button class="mob-menu-btn" id="open-mob-btn"><svg class="mob-icon" width="20" height="20"><use href="./images/icons.svg#icon-Group"></use></svg></button>
     
-   
+    <!------- mob-menu  --------->
     <div class="mob-menu" id="open-modal-mob">
 
+
+      <!-------  mob-menu close button --------->
       <div>
         <button type="button" class="menu-close-btn" id="close-menu-btn"><svg width="8" height="8" class="mob-close-icon" id="close-mob-menu">
         <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
       </svg>
       </button>
     </div>
-
-        
+   
+        <!-- mob-menu-navigation -->
         <ul class="mob-nav">
           <li><a href="./index.html" class="mob-nav-links current-mob">Studio</a></li>
           <li><a href="" class="mob-nav-links">Portfolio</a></li>
           <li><a href="" class="mob-nav-links">Contacts</a></li>
         </ul>
-       
+
+
+        <!-- mob-menu-adress -->
         <div class="address">
         <address class="mob-address">
         <ul class="mob-contact">
@@ -68,6 +88,7 @@
       </address>
         </div>
 
+        <!-- mob-menu-icons-list -->
         <ul class="mob-icons-list">
           <li class="mob-icons-items">
             <a href="" class="mob-icons-link">
@@ -77,6 +98,7 @@
             </a>
           </li>
         
+       
           <li class="mob-icons-items">
             <a href="" class="mob-icons-link">
               <svg class="mob-team-icon" width="24" height="24">
@@ -101,8 +123,9 @@
             </a>
           </li>
         </ul>
-
+        
     </div>
+    <!-- End -->
     </header> 
     
     <main>
@@ -111,12 +134,12 @@
     <section class="solutions">
         <div class="container">
            <h1 class="solutions-text">Effective  Solutions for Your Business</h1>
-           <button type="button" class="service-button" id="open-modal-btn">Order Service</button>
+           <button type="button" class="service-button" id="open-modal-btn">Order Service<i class="fas fa-pen-nib"></i></button>
         </div>
     </section> 
-     
+     <!-- End -->
       
-        
+        <!-- section benefits with svg  -->
         <section class="section-benefits"> 
         <div class="container">
         <h2 class="visually-hidden">Benefits of company</h2>
@@ -164,6 +187,7 @@
         </ul> 
      </div>
     </section>    
+    <!-- End -->
         
                      <!--Our team-->
    
@@ -224,7 +248,7 @@
               </a>
              </li>
          </ul>
-      
+           
       </div>
         
          </li>
@@ -351,7 +375,7 @@
               </div>
            
          </li>
-       
+                   
       
           <li class="our-team-item">
           
@@ -413,12 +437,12 @@
        </ul>
     </div>
     </section>
-    
+        <!-- End -->
 
-  
+       <!-- Section with apps -->
      <section class="section-app">  
       <div class="container">
-        <h2 class="about-person">Our Portfolio</h2>
+        <marquee behavior="scroll" direction="left"  scrollamount="8" class="about-person">Our Portfolio</marquee>
         <ul class="app-list">
             <li class="app-item">
               <div class="container-bank-image">
@@ -568,7 +592,7 @@
       
     </div>
     </section> 
-    
+      <!-- End -->
     </main>
 
                       <!--Footer-->
@@ -629,6 +653,9 @@
 
               </div>
          </footer> 
+        <!-- End -->
+      
+        <!-- Modal-menu -->
          <div class="backdrop" id="window-open">
         <div class="modal">
         
@@ -679,10 +706,12 @@
         <button class="user-btn">Send</button>
        </form>   
         </div>
-    
+        <!-- End -->
 </div>
-  
-<script src="modal.js"></script>
+   <!-- JS -->
+<script src="./modal.js"></script>
+<script src="./dark-light.js"></script>
+<script src="./active.js"></script>
 </body>
 </html>
 

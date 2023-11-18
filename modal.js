@@ -1,3 +1,4 @@
+// M0b-modal window
 document.addEventListener("DOMContentLoaded", function () {
     
     
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("open-modal-mob").classList.remove("is-open")
     })
 
-
+//   Modal-window
 
     document.getElementById("open-modal-btn").addEventListener("click", function () {
         document.getElementById("window-open").classList.add("is-open")
